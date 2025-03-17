@@ -8,29 +8,56 @@
             <meta name="viewport" content="width-device-width, initial-scale=1.0">
             <title>Minha Lista de Links Pessoais</title>
             <link rel="stylesheet" href="../CSS/style.css">
+            <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
         </header>
     </head>
 
     <body>
+        <style>
+
+            @import url("https://fonts.googleapis.com/css?family=Nova Flat");
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+            #titulo {
+                font-family: Nova Flat;
+            }
+
+            #links a{
+                font-family: Roboto;
+            }
+
+            #creditos {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
         <div id="homepage">
             <nav>
+                <div id="titulo">
+                    <section>
+                        <p class="text-4xl ...">Bem-vindo ao meu site de links pessoais!</p>
+                        <p class="text-2xl">Onde eu guardo memes, vídeos e outras coisas que acho interessante...</p>
+                    </section>
+                </div>
+                <br>
+                <br>
+                <div id="links">
                 <section>
-                    <h1>Bem-vindo ao meu site de links pessoais!</h1>
-                    <h2>Onde eu guardo memes, vídeos e outras coisas que acho interessante...</h2>
-                </section>
-            
-                <section>
-                    <ol>
-                        <li> <a href="pagina1_memes.html">Página de Memes Engraçados... eu acho.</a></li>
-                        <li> <a href="pagina2_videos_aleatorios.html">Página de Vídeos BEEEEEM Aleatórios.</a></li>
-                        <li> <a href="pagina3_meus_musicos_favoritos.html">Meus Músicos Favoritos</a></li>
-                    </ol> 
-                </section>
+                        <ol>
+                            <li> <a href="pagina1_memes.html">Página de Memes Engraçados... eu acho.</a></li>
+                            <li> <a href="pagina2_videos_aleatorios.html">Página de Vídeos BEEEEEM Aleatórios.</a></li>
+                            <li> <a href="pagina3_meus_musicos_favoritos.html">Meus Músicos Favoritos</a></li>
+                        </ol> 
+                    </section>
+                </div>
             </nav>
+            <br>
+            <br>
             <footer>
-                <table>
-                    <td>Site Feito Por: <strong>Lucas Sacco Parisi</strong></td>
-                </table>
+                <div id="creditos">
+                    <table>
+                        <td>Site Feito Por: <strong>Lucas Sacco Parisi</strong></td>
+                    </table>
+                </div>
             </footer>
         </div>
     </body>
