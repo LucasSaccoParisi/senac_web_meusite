@@ -2,25 +2,48 @@
 <html lang="pt-br">
 <html>
     <header>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width-device-width, initial-scale=1.0">
-            <title>Minha Lista de Memes</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Minha Lista de Links Pessoais</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     </header>
 
     
     <body>
+        <style>
+
+            @import url("https://fonts.googleapis.com/css?family=Nova Flat");
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+            #titulo {
+                font-family: Nova Flat;
+            }
+
+            #texto{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #creditos {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
         <div id="pagedememes">
             <nav>
             <section>
-                <h2>Lista de Memes</h2>
+                <div id="titulo">
+                <p class="text-4xl">Lista de Memes</p>
+                </div>
+                <br>
                 <section>
+                    <div id="texto">
                     <aside>
                         Essa página é só pra salvar uns memes que ví e acho legal.
                     </aside>
+                    </div>
                 </section>
+                <br>
+                <br>
             <section>
                     <ul>
                         <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIWY6iDEYxdZ6uk3wL3Io7mbhjN1-4l5kSA&s"> </li>
@@ -31,12 +54,13 @@
                     </ul>
             </section>
             </nav>
-
+            <div id="creditos">
             <footer>
                 <table>
                     <td>Site Feito Por: <strong>Lucas Sacco Parisi</strong></td>
                 </table>
             </footer>
+            </div>
         </div>
     </body>
     

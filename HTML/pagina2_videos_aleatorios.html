@@ -2,26 +2,47 @@
 <html lang="pt-br">
 <html>
     
-    <head>
-        <header>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width-device-width, initial-scale=1.0">
-            <title>Minha Lista de Vídeos</title>
-            <link rel="stylesheet" href="style.css">
-        </header>
-    </head>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Minha Lista de Links Pessoais</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </header>
     
 
     <body>
+        <style>
+
+            @import url("https://fonts.googleapis.com/css?family=Nova Flat");
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+            #titulo {
+                font-family: Nova Flat;
+            }
+
+            #links {
+                font-family: Roboto;
+            }
+
+            #creditos {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
         <div id="pagedevideos">
             <nav>
                 <section>
-                    <h2>Lista de Vídeos que Amo</h2>
+                    <div id="titulo">
+                    <p class="text-4xl">Lista de Vídeos que Amo</p>
+                    </div>
+                    <br>
                     <section>
                         <aside>
                             Essa página é só pra salvar uns vídeos que ví e acho legal.
                         </aside>
                     </section>
+                    <br>
+                    <div id="links">
                     <ul>
                         <h3>Vídeos Aleatórios MESMO</h3>
                         <details>
@@ -54,13 +75,16 @@
                         <li><iframe width="560" height="315" src="https://www.youtube.com/embed/prHUJxT0ILg?si=7PPZaYTH0IWYk1NL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
                         </details>
                     </ul>
+                    </div>
                 </section>
             </nav>
+            <div id="creditos">
             <footer>
                 <table>
                     <td>Site Feito Por: <strong>Lucas Sacco Parisi</strong></td>
                 </table>
             </footer>
+            </div>
         </div>
     </body>
 </html>

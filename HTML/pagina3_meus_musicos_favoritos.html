@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <html>
-    <head>
-        <header>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width-device-width, initial-scale=1.0">
-            <title>Minha Lista de Músicos</title>
-            <link rel="stylesheet" href="style.css">
-        </header>
-    </head>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Minha Lista de Links Pessoais</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </header>
 
     <body>
+        <style>
+
+            @import url("https://fonts.googleapis.com/css?family=Nova Flat");
+			@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+            #titulo {
+                font-family: Nova Flat;
+            }
+
+            #texto{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #links a{
+                font-family: Roboto;
+            }
+
+            #creditos {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
         <div id="pagedemusicos">
             <nav>
                 <section>
-                    <h2>Lista de Músicos que Escuto</h2>
+                    <div id="titulo">
+                    <p class="text-4xl">Lista de Músicos que Escuto</p>
+                    </div>
+                    <br>
                     <section>
-                        <aside>
-                            Essa página é pra salvar os meus músicos favoritos.
-                        </aside>
+                        <div id="texto">
+                            <aside>
+                                Essa página é pra salvar os meus músicos favoritos.
+                            </aside>
+                        </div>
                     </section>
+                    <br>
+                    <div id=links>
                     <ol>
                         <li> <a href="https://music.youtube.com/channel/UCprFt4Sn4rnLyXUnXFX9ksQ?si=9hSswVR6ri5XMYlp">Jorge Ben Jor</a></li>
                         <li> <a href="https://music.youtube.com/channel/UCLltkJWs2ZMKzPmWgvZRSog?si=J_TFa68ZRSYZvXgx">Zeca Pagodinho</a> </li>
@@ -27,13 +54,17 @@
                         <li> <a href="https://music.youtube.com/channel/UCprAFmT0C6O4X0ToEXpeFTQ?si=Mm_xiuCKoJeYXVSH">Kendrick Lamar</a> </li>
                         <li> <a href="https://music.youtube.com/channel/UCXi-Rme73-wjVK5IE78a3SQ?si=eBzPddzWUvbsVztB">Joji</a> </li>
                     </ol>
+                    </div>
                 </section>
             </nav>
+            <br>
+            <div id="creditos">
             <footer>
                 <table>
                     <td>Site Feito Por: <strong>Lucas Sacco Parisi</strong></td>
                 </table>
             </footer>
+            </div>
         </div>
     </body>
 </html>
